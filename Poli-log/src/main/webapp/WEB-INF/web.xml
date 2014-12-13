@@ -17,8 +17,8 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <!--<url-pattern>*.xhtml</url-pattern>-->
-        <url-pattern>/faces/*</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
+        <!--<url-pattern>/faces/*.xhtml</url-pattern>-->
     </servlet-mapping>
     <session-config>
         <session-timeout>

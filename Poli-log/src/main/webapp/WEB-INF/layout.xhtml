@@ -9,12 +9,12 @@
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title><ui:insert name="titulo">Sistema de Gerenciamento Logístico</ui:insert></title>
-        <h:outputStylesheet name="css/estilo.css"/>
+        <h:outputStylesheet library="css" name="estilo.css"/>
     </h:head>
 
     <h:body>
-        
-         <p:ajaxStatus styleClass="ajax-status">
+        <!--ICONE DE CERREGAMENTO AJAX-->
+        <p:ajaxStatus styleClass="ajax-status">
             <f:facet name="start">
                 <h:graphicImage library="images/gifanimado" name="loading.gif"/>
             </f:facet>
@@ -24,19 +24,26 @@
             </f:facet>
 
         </p:ajaxStatus>
+        <!--FIM ICONE DE CERREGAMENTO AJAX-->
+        
         <header>            
-                <ui:include src="Menu.xhtml"/>
+            <ui:include src="../WEB-INF/template/Menu.xhtml"/>
         </header>
+
         <content>
             <ui:insert name="conteudo">
-                <ui:include src="conteudo.xhtml"/>
+                conteudo
             </ui:insert>
-            
+
         </content>
+
         <footer>
-            <ui:include src="rodape.xhtml"/>
+             <ui:insert name="rodape">
+                 <ui:include src="../WEB-INF/template/rodape.xhtml"/>
+            </ui:insert>
+           
         </footer>
-            
+
 
     </h:body>
 </html>

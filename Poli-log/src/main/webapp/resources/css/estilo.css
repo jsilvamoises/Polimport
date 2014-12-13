@@ -1,8 +1,13 @@
 body{
     background-color: beige;
-    font-size: 10px;
+    font-size: 10px; 
+    margin: 0px;
+    font-family: Arial, Helvetica , sans-serif;
+    background-image: url("../images/background/1676581.jpg");
 }
-
+header{
+  //  padding: 5px 0px;
+}
 #conteudo{
     //padding-top: 10px;
     background: #ffffff;
@@ -17,14 +22,51 @@ body{
     //background-color: dimgray;
     //height: 8%;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px #999999;
+    //box-shadow: 5px 5px 5px #999999;
 }
 #plano-de-fundo{
     position: absolute;
 }
 #rodape{
     margin-top: 5px;
-    background: grey;
+    background: gainsboro;
     box-shadow: 5px 5px 5px #999999;
+    background-image: url("../images/background/fundo-menu-bootstrap.PNG");
     
+    
+}
+#rodape-a{
+    
+}
+.campo{
+   
+}
+.frm-medio{
+    width: 900px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid #ffffff;
+    
+}
+.grid{
+    padding-top: 10px;
+    background-color: silver;
+    border-radius: 8px;
+}
+.rotulo{
+    width: 150px;
+    text-align: right;
+}
+#cadastro-separador{
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#cadastro{
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
 }

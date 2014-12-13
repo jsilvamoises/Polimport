@@ -10,22 +10,21 @@
 
             <div class="ui-grid-col-12" id="menu">
                 <h:form >  
-                    <p:growl id="messages"/>
+                   
 
 
 
                     <p:menubar >
                         <p:submenu label="Cadastro" icon="ui-icon-document">
-                            <p:menuitem value="Usuários"/>
-                            <p:menuitem value="Separadores"/>
-                            <p:menuitem value="Motoristas"/>
+                            <p:menuitem value="Usuários" outcome="/usuario/CadastroUsuario"/>
+                            <p:menuitem value="Separadores" outcome="/separador/CadastroSeparador"/>
+                            <p:menuitem value="Motoristas" outcome="/motorista/CadastroMotorista"/>
                             <p:separator/>
-                            <p:menuitem value="Lojas"/>
-                            <p:menuitem value="Transportadoras"/>
+                            <p:menuitem value="Lojas" outcome="/loja/CadastroLoja"/>
+                            <p:menuitem value="Transportadoras" outcome="/transportadora/CadastroTransportadora"/>
                         </p:submenu>
 
                         <p:submenu label="Operacional">
-
                             <p:submenu label="Expedição">
                                 <p:menuitem value="Consulta Mapa"/>
                                 <p:menuitem value="Pesos e Medidas"/>
@@ -38,6 +37,12 @@
                                 <p:menuitem value="Finalizar Loja"/>
                             </p:submenu>
 
+                        </p:submenu>
+                        
+                        <p:submenu label="Insumos">
+                            <p:submenu label="Expedição">
+                                <p:menuitem value="Cadastro"/>
+                            </p:submenu>
                         </p:submenu>
 
 
