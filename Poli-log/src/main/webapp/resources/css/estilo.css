@@ -1,11 +1,12 @@
 body{
-    background-color: black;
+    background-color: beige;
     font-size: 10px;
 }
 
 #conteudo{
+    //padding-top: 10px;
     background: #ffffff;
-    height: 87%;
+   
 }
 #logo{
     margin: 5px 5px;
@@ -13,13 +14,17 @@ body{
    width: 75px;
 }
 #menu{
-    background-color: dimgray;
-    height: 8%;
+    //background-color: dimgray;
+    //height: 8%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #999999;
 }
 #plano-de-fundo{
     position: absolute;
 }
 #rodape{
+    margin-top: 5px;
     background: grey;
-    height: 5%;
+    box-shadow: 5px 5px 5px #999999;
+    
 }
