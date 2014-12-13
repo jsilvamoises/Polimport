@@ -15,11 +15,11 @@
             </ui:define>
 
             <ui:define name="conteudo">
-                <h:form>
-                    <div class="consulta">
-                        <img src="../resources/images/icons/search-icon-64.png"/>
-                        <h1>Consulta Usuários</h1> 
 
+                <div class="consulta">
+                    <img src="../resources/images/icons/search-icon-64.png"/>
+                    <h1>Consulta Usuários</h1> 
+                    <h:form class="formulario">
                         <p:toolbar>
                             <p:toolbarGroup>                                
                                 <p:commandButton value="Pesquisar" id="pesquisar-usuario"/>
@@ -38,14 +38,45 @@
                             <p:outputLabel value="Nome"/>
                             <p:inputText size="200"  />
                         </p:panelGrid>
-                        
-                        <p:dataTable id="tabela-consulta-usuario" value="#{testeController.pedidos}" var="usuario" style="margin-top: 20px" emptyMessage="Nenhum registro encontrado!">
-                           
+
+                        <p:dataTable id="tabela-consulta-usuario" value="#{geraDados.lista}" var="usuario" style="margin-top: 20px" emptyMessage="Nenhum registro encontrado!" scrollable="true" scrollHeight="400">
+
+                            <f:facet name="header">
+                                Lista de Usuarios.
+                            </f:facet>
+
+                            <p:column headerText="ID" styleClass="coluna-id" style="width: 60px">
+                                <p:outputLabel value="123"/>
+                            </p:column>
+
+                            <p:column headerText="Nome" style="width: 200px" >
+                                <p:outputLabel value="MOISES JUVENAL DA SILVA"/>
+                            </p:column>
+
+                            <p:column headerText="Login" style="width: 200px">
+                                <p:outputLabel value="MOISES.SILVA"/>
+                            </p:column>
+
+                            <p:column headerText="Data Cadastro" style="width: 120px">
+                                <p:outputLabel value="01/01/2014"/>
+                            </p:column>
+
+                            <p:column headerText="Departamento" style="width: 120px">
+                                <p:outputLabel value="EXPEDICAO"/>
+                            </p:column>
+
+                            <p:column headerText="Status" style="width: 120px">
+                                <p:outputLabel value="ATIVO"/>
+                            </p:column>
+
+                            <f:facet name="footer">
+                                #{geraDados.lista.size()} Registros encontrado!
+                            </f:facet>
                         </p:dataTable>
-                    </div>
+               
                 </h:form>
 
-
+            </div>
 
 
             </ui:define>

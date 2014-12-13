@@ -30,10 +30,16 @@
     <dependencies>        
         <!--k-->
         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
-            <scope>provided</scope>
+            <type>jar</type>
         </dependency>
         
         <!--DEPENDENCIA PRIMEFACES-->
@@ -64,7 +70,7 @@
             <version>1.1.7</version>
             <scope>compile</scope>
         </dependency>
-        
+       
         
     </dependencies>
 

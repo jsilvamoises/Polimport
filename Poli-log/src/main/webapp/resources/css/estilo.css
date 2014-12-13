@@ -8,6 +8,9 @@ body{
 header{
   //  padding: 5px 0px;
 }
+h1{
+    color: #999999;
+}
 #conteudo{
     //padding-top: 10px;
     background: #ffffff;
@@ -46,16 +49,30 @@ header{
    height: 35px;
 }
 .campo{
-  
+  background-color:  activeborder;
+}
+.coluna-id{
+    font-size: medium;
+    font-family: sans-serif;
+    color: #990033;
+    text-align: center;
 }
 .frm-medio{
     width: 900px;
-    padding: 5px;
+    padding: 30px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 5px 5px 5px gray;
-    border: 1px solid #ffffff;
+    border: 1px solid activecaption;
     
+}
+.formulario{
+    background-color: activecaption;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid activecaption;
 }
 .grid{
     padding-top: 10px;
@@ -65,6 +82,8 @@ header{
 .rotulo{
     width: 150px;
     text-align: right;
+    font-size: large;
+    background-color: darkgrey;
 }
 #cadastro-separador{
     width: 900px;
@@ -73,14 +92,17 @@ header{
 }
 
 #cadastro{
+    
     width: 900px;
     margin: auto;
     margin-top: 10px;
 }
 
 .consulta{
+   
     padding: 20px;
     width: 80%;
     margin: auto;
     margin-top: 10px;
+    
 }

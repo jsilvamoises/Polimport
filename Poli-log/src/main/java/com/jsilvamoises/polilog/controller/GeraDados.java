@@ -4,30 +4,28 @@
  * and open the template in the editor.
  */
 package com.jsilvamoises.polilog.controller;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+
+
 
 
 /**
  *
- * @author MOISES
+ * @author Moises
  */
 @ManagedBean
-@RequestScoped
-public class TesteController {
+public class GeraDados {
     private List<Integer> lista;
-    public TesteController(){
+    public List getLista(){
         lista = new ArrayList<>();
-        for(int i= 0;i<50;i++){
+        for (int i = 0; i < 500; i++) {
             lista.add(i);
         }
-        
-    }
-    
-    public List<Integer> getPedidos(){
         return lista;
     }
+    
     
 }
