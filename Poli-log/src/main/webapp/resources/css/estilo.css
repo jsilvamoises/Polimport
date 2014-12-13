@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    font-size: 10px;
+}
+
+#conteudo{
+    background: #ffffff;
+    height: 87%;
+}
+#logo{
+    margin: 5px 5px;
+   height: 30px;
+   width: 75px;
+}
+#menu{
+    background-color: dimgray;
+    height: 8%;
+}
+#plano-de-fundo{
+    position: absolute;
+}
+#rodape{
+    background: grey;
+    height: 5%;
+}
