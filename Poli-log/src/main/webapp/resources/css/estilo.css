@@ -38,8 +38,15 @@ header{
 #rodape-a{
     
 }
+.ajax-status{
+     position: fixed;
+   top: 55px;
+   right: 40px;
+   width: 35px;
+   height: 35px;
+}
 .campo{
-   
+  
 }
 .frm-medio{
     width: 900px;
@@ -62,11 +69,18 @@ header{
 #cadastro-separador{
     width: 900px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 #cadastro{
     width: 900px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+.consulta{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
 }
